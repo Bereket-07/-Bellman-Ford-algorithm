@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Input Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="text-center">Graph Input</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="vertices">Number of Vertices (N):</label>
+                    <input type="number" class="form-control" name="vertices" required>
+                </div>
+                <div class="form-group">
+                    <label for="edges">Edges (JSON format, e.g., [[0,1,100],[1,2,100]]):</label>
+                    <textarea class="form-control" name="edges" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="start">Start Vertex:</label>
+                    <input type="number" class="form-control" name="start" required>
+                </div>
+                <div class="form-group">
+                    <label for="end">End Vertex:</label>
+                    <input type="number" class="form-control" name="end" required>
+                </div>
+                <div class="form-group">
+                    <label for="max_stops">Max Stops:</label>
+                    <input type="number" class="form-control" name="max_stops" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
