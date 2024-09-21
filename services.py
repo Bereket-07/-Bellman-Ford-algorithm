@@ -31,25 +31,3 @@ class graph:
 
         return distance[end], paths[end]
     
-#  # Example usage
-# if __name__ == "__main__":
-#     N = 4
-#     g = graph(N)
-
-#     # Add edges (u, v, w)
-#     g.add_edge(0, 1, 100)
-#     g.add_edge(1, 2, 100)
-#     g.add_edge(0, 2, 500)
-
-#     # Set parameters
-#     START = 0
-#     END = 2
-#     MAX_STOPS = 1
-
-#     # Find shortest path
-#     distance, path = g.bellman(START, END, MAX_STOPS)
-
-#     if distance is not None:
-#         print("Distance:", distance)
-#         print("Path:", " -> ".join(map(str, path)))
-
